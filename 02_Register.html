@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="C:\Users\gross\Downloads\Diploma_IV\Projects_MsCode\WEB522\Web522_Style.css">
+        
+    </head>
+    
+    <body> 
+        <header>
+            <!-- div style="display: flex; justify-content: center; align-items: center;"-->
+            <img src="C:\Users\gross\Downloads\Diploma_IV\Projects_MsCode\Images_HTML\522_logo.PNG" oncontextmenu="return false" alt="logo522img" width="40px" height="40px" >
+            
+        </header>
+
+        <menu>
+    
+        <div class="container">
+            <!--beggining 80%-->
+            <div class="mainpart-80">
+
+            <button onclick="IrParaIndex()"type="button" class="btn btn-outline-primary">Home</button>
+            <button onclick="IrPara01_Prod()"type="button" class="btn btn-outline-secondary">Product </button>
+            <button onclick="IrPara02_Register()" type="button" class="btn btn-outline-success">Register</button>
+            <button onclick="IrPara03_About()"type="button" class="btn btn-outline-danger">about</button>
+            </div>
+
+            <!--beggining   20%-->
+            <div class="mainpart-20">
+            <input type="text" id="searchbox" placeholder="search..." >
+            <button onclick="IrParaSearchButton()"type="button" class="btn btn-outline-danger">Search</button>
+            </div>
+            </div>
+        </menu>
+
+
+         <div class="container">
+            <!--beggining 80%-->
+            <div class="mainpart-80">
+
+            <h1>Registration form.<div></div>Please complete the following form to register for an account on our website.</h1>
+            
+            <h2> 
+        <form onsubmit="showMessage(); return false;">
+                
+                <label  class="quebra-linha" >
+                 User Name:
+                <input type="text" id="username"  placeholder="min 4 letters">
+                </label>
+
+                <label class="quebra-linha" >
+                Email:
+                <input type="email" id="email" required  placeholder="example@email.com" >
+                </label>
+
+                <label class="quebra-linha" >
+                Password:
+                <input type="password" id="password" required minlength="6"  placeholder="min 6 numbers">
+                </label>
+
+                <label class="quebra-linha" >
+                ConfirmPassword:
+                <input type="password" id="confirmpassword" required minlength="6" placeholder="min 6 numbers">
+                </label>
+
+                <label class="quebra-linha" >
+                First Name:
+                <input type="text" id="name" required minlength="4" placeholder="min 4 letters">
+                </label>
+
+                <label class="quebra-linha" >
+                Last Name:
+                <input type="text" id="lastname" required minlength="4" placeholder="min 4 letters">
+                </label>
+        
+                <label class="quebra-linha" >
+                Gender:
+                <select id="gender" required>
+                <option value="">-- Select --</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+                </select>
+                </label>
+
+                <label class="quebra-linha" >
+                Birth date:
+                <input type="date" id="birthdate" placeholder="01/01/1999">
+                </label>
+                
+                <label class="quebra-linha" >
+                Full Address:
+                <input type="text" id="fulladdress" required minlength="6"  placeholder="123 streetExample">
+                </label>
+
+                <label class="quebra-linha" >
+                Suburb:
+                <input type="text" id="suburb" required minlength="6" placeholder=" SuburbExample">
+                </label>
+
+                <label class="quebra-linha" >
+                Postcode:
+                <input type="number" id="postcode" required maxlength="4"  placeholder="4 numbers only">
+                </label> 
+        
+                <label class="quebra-linha" >
+                State:
+                <input type="text" id="state" required minlength="6"  placeholder="min 6 letters">
+                </label>
+
+                <label class="quebra-linha" >
+                Phone:
+                <input type="tel" id="phone" placeholder="e.g. 0412 3454 678">
+                </label>
+
+        <div></div>
+        <button type="submit" class="quebra-linha" >submit</button>
+        <div></div>
+        <button type="reset" class="quebra-linha" >reset</button>
+
+        <div style="font-size: 30px" id="message"></div>
+        </form>
+            <div></div>
+            <!-- <script src="" async defer></script> --> 
+            <!-- <div style="font-size: 30px" id="message"></div> -->
+            <script src="C:\Users\gross\Downloads\Diploma_IV\Projects_MsCode\WEB522\Web522JavaScript.js"> </script>
+            </h2>
+
+
+            </div>
+
+            <!--beggining   20%-->
+            <div class="mainpart-20">
+                <!-- insert see pg23 aside item -->
+                <a>0 items. cart sub-total: 0$ </a> 
+                <div></div>
+                <button onclick="IrParaCheckout()"type="button" class="btn btn-outline-danger">Checkout</button>
+            
+            </div>
+            
+            <main></main>
+         </div>
+    
+
+    <footer>
+
+        <div></div>
+        <a>© 2025 Computer Force. All rights reserved. </a>
+
+    </footer>
+
+     
+</body>
+</html>
