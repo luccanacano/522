@@ -55,12 +55,27 @@ footer {
     padding: 0rem;
 }
 
+
+@media (min-width: 1200px) {
 .img-responsiva {
-    max-width: 200px; /* Nunca ultrapassar... px */
-    min-width: 500px;
     height: auto;     /* Mantém a proporção */
     display: block;  
 }
+}
+
+@media (min-width: 768px) {
+.img-responsiva {
+    height: auto;     /* Manter a proporção */
+    display: block;  
+}
+}
+
+.img-responsiva {
+    width: 100%; /* Nunca ultrapassar 300 px */
+    height: auto;     /* Manter a proporção */
+    display: block;  
+}
+
 
 .quebra-linha {
     float: left;
